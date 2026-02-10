@@ -1,0 +1,60 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0px;
+}
+#table{
+    display: inline-block;
+    width: 75%;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+#srchParam{
+    margin-right: 5%;
+    display: inline-block;
+    width: 25%;
+}
+#cntrlPnl{
+    border: red dashed 2px;
+    border-radius: 4px;
+    background-color: lightyellow;
+    padding: 10px;
+}
+.txtInp{
+    width: 10em;
+}
+label {
+  display: flex;
+  margin-bottom: 12px;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 5px;
+}
+button{
+    width: 100%;
+    padding:5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+button:hover {
+    cursor: pointer;
+    background-color: navy;
+    color: white;
+}
+table, th, td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 0.5em;
+    
+}
