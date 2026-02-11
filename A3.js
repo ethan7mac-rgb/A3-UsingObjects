@@ -3,18 +3,37 @@ window.onload = function(){
     let url = "flights.json";
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
-    // code 200 means the server succeeded in retrieving the resource
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        buildTable(xhr.responseText); // do something when server responds
+        jsonParse(xhr.responseText);
     }
     };
-    xhr.open("GET", url, true); // must use “GET” method
+    xhr.open("GET", url, true);
     xhr.send();
+    
+    let btnApply = this.document.querySelector("#apply");
+    let btnShowAll = this.document.querySelector("#showAll");
+    btnApply.addEventListener("click", apply);
+    btnShowAll.addEventListener("click", showAll);
+
 }
 
-function buildTable(text){
-    let data = JSON.parse(text);
-    let flight = data.flights;
+let allFlights;
+function jsonParse(text){
+    allFlights = JSON.parse(text);
+    alert("File data is ready!");
+}
+
+function showAll(){
+    buildTable();
+    console.log("show click")
+}
+
+function apply(){
+    
+}
+
+function buildTable(){
+    let flight = allFlights.flights;
     console.log(flight);
     let htmlString = "<table>";
     htmlString += "<tr>";

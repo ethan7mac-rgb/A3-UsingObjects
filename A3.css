@@ -11,18 +11,18 @@ h1{
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    gap: 0px;
+    gap: 5%;
 }
 #table{
     display: inline-block;
-    width: 75%;
+    width: 70%;
     align-items: flex-start;
     margin-left: 5%;
 }
 #srchParam{
     margin-right: 5%;
     display: inline-block;
-    width: 25%;
+    width: 20%;
 }
 #cntrlPnl{
     border: red dashed 2px;
@@ -45,16 +45,22 @@ button{
     padding:5px;
     margin-top: 15px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: #E0DDA8;
 }
 button:hover {
     cursor: pointer;
-    background-color: navy;
-    color: white;
+    background-color: orange;
 }
 table, th, td{
     border: 1px black solid;
     border-collapse: collapse;
     padding: 0.5em;
     
+}
+tr:nth-child(even){
+    background-color: lightblue;
+}
+tr:nth-child(1){
+    background-color: navy;
+    color: white;
 }
