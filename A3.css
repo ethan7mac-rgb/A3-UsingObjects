@@ -15,9 +15,8 @@ h1{
 }
 #table{
     display: inline-block;
-    width: 70%;
+    min-width: 70%;
     align-items: flex-start;
-    margin-left: 5%;
 }
 #srchParam{
     margin-right: 5%;
@@ -55,7 +54,6 @@ table, th, td{
     border: 1px black solid;
     border-collapse: collapse;
     padding: 0.5em;
-    
 }
 tr:nth-child(even){
     background-color: lightblue;
@@ -63,4 +61,9 @@ tr:nth-child(even){
 tr:nth-child(1){
     background-color: navy;
     color: white;
+}
+#flightsTabel{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
