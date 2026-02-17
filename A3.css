@@ -32,6 +32,12 @@ h1{
 .txtInp{
     width: 10em;
 }
+input:hover{
+    cursor: pointer;
+}
+select:hover{
+    cursor: pointer;
+}
 label {
   display: flex;
   margin-bottom: 12px;
